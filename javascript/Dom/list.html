@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <ul id="mylist">
+            <li id="l1">item1</li>
+            <li id="l2">item2</li>
+            <li id="l3">item3</li>
+            <li id="l4">item4</li>
+        </ul>
+        <script>
+            let list=document.getElementById("mylist")
+            let l2=document.getElementById("l2")
+           
+            let newitem=document.createElement("li")
+           newitem.appendChild(document.createTextNode("inserted item"))
+                
+           // Insert the new item before l2
+           list.insertBefore(newitem,l2)
+           
+           
+            let l3=document.getElementById("l3")
+            // list.removeChild(l3)
+
+            let l4 = document.createElement("li");
+            l4.appendChild(document.createTextNode("fourth item"));
+
+         // Replace l3 with the new item
+
+            list.replaceChild(l4,l3)
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive ,sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url('https://www.rawpixel.com/image/4200622/illustration-vector-background-wallpaper-paper');
+    background-repeat: no-repeat;
+     background-size: cover; 
+    overflow: hidden; 
+} 
+#main-header{
+    border-radius: 5px;
+}
+#header-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #030202;
+}
+.container{
+    width: 50%;
+    margin-top: 7em;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-bottom: 4px solid rgb(249,230,146);
+}
+.content{
+    display: 1 1 0%;
+    width: 90%;
+}
+.item .content .text{
+    font-size: 1.125rem;
+    width: 100%;
+    border-color: transparent;
+}
+.item .content .text:hover{
+    cursor: context-menu;
+}
+.item .action{
+    display: flex;
+}
+.item .action button{
+    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 2px 6px;
+}
+    

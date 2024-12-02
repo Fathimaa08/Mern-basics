@@ -1,0 +1,22 @@
+<html>
+    
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <body>
+        <h2>Basic examples of jquery</h2>
+        <p class="c1">this page is clicked going hidden</p>
+        <p class="c2">this page is too</p>
+        <button class="c1">change this page</button>
+        <button id='b1'>click this page too</button>
+        </body>
+        <script>
+                        $(document).ready(function(){
+                            $('#b1').click(function(){
+                                $('.c1').hide();
+                            });
+                            // $("*").hide();
+                        });
+                      
+
+        </script>
+</html>

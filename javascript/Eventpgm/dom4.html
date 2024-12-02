@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form>
+        Enter first name:<input type="text" id="fn"/><br>
+        Enter last name:<input type="text" id="ln"/><br>
+        <input type="button" onclick="showfn()" value="show full name"/>
+
+    </form>
+    <script>
+        function showfn(){
+            var first=document.getElementById("fn").value;
+            var last=document.getElementById("ln").value;
+            alert("your full name is:"+first+last)
+        }
+    </script>
+</body>
+</html>

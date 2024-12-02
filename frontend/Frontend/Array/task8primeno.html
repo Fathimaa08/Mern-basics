@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var arr=[];
+        var limit=Number(prompt("enter the limit"));
+        var prime=[];
+        for(i=0;i<limit;i++){
+        var num=Number(prompt("enter the number"));
+        arr.push(num);
+
+        let  flag=1;
+        if(num>1){
+        for(j=2;j<=Math.floor(num/2);j++){
+            if(num%j==0){
+                flag=0;
+               break;
+            }
+                 }
+               
+                 if (flag==1){
+                    prime.push(num)
+                 }
+
+        }
+    }
+    document.write("All Numbers: " + arr + "<br>");
+    document.write("Prime Numbers: " + prime); 
+
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

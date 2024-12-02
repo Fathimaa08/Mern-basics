@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var arr=[5,66,44,23,31,27,65,80];
+        var arr2=arr;
+        var len=arr.length;
+        for(i=0;i<len;i++){
+            for(j=0;j<len;j++){
+                if(arr2[j]<arr2[j+1]){
+                    var temp=arr2[j];
+                    arr2[j]=arr2[j+1];
+                    arr2[j+1]=temp;
+                }
+            }
+           }
+        document.write("sorted array is:" ,arr);
+            
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

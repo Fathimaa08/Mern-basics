@@ -1,0 +1,41 @@
+<script>
+    var a=Number(prompt('Enter a first number'));
+    var b=Number(prompt('Enter a second number'));
+
+    // var promise=new Promise(function(resolve,reject){
+       
+    //     if(a==b){
+    //         resolve('Numbers are equal');
+    //     }else{
+    //         reject('Numbers are not equal');
+    //     }
+    // });
+    // promise.then(function(msg){
+    //     console.log(msg)
+    // });
+    // promise.catch(function(msg){
+    //     console.log(msg)
+    // });
+
+
+
+    var promise=new Promise(function(resolve,reject){
+      if(a!=b){
+           resolve(a+b);
+       }else{
+           reject('Not same number, try different numbers');
+       }
+   });
+   promise.then(function(msg){
+       alert(msg)
+   });
+   promise.catch(function(msg){
+       alert(msg)
+   });
+
+
+
+
+
+
+</script>

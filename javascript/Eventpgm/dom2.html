@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+   
+</head>
+<body>
+    <form name="form1">
+        Enter Age:<input type="number" name="n1">
+        <input type="button" onclick="validate()" value="check">
+    </form>
+    <script>
+        function validate(){
+            var age=document.form1.n1.value
+            if(age>=18){
+                alert("you are eligible to vote");
+
+            }else{
+                alert("you are not eligible to vote")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" onsubmit=" validate()">
+        Name:<input type="text" id="name"/>
+        <br><br>
+        Age:<input type="number" id="age"/>
+        <br><br>
+        Password:<input type="password" id="P1"/>
+        <br><br>
+        Re-enter Password:<input type="password" id="P2"/>
+        <br><br>
+        <input type="Submit" value="Register"> 
+    </form>
+    <script>
+        function validate(){
+            var name=document.getElementById("name").value;
+            var age=document.getElementById("age").value;
+            var Password1=document.getElementById("P1").value;
+            var Password2=document.getElementById("P2").value;
+            if(name==null || name==""){
+                alert("Name can't be blank");
+                return false;
+            }else if(age<18){
+                alert("Your age must be at least 18 years old");
+            return false;
+        } else if (Password1.length<6) {
+            alert("Password must be atleast 6 characters long");
+            return false;
+        } else if (Password1 !== Password2) {
+            alert("Re-entered Password does not match the first entered password ");
+            return false;
+        }
+
+        alert("Registration Successfull");
+        return true;
+                
+            } 
+
+         </script> 
+
+  
+
+</body>
+</html>

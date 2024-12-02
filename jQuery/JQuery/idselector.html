@@ -1,0 +1,26 @@
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <body>
+        <h2>Basic examples of jquery</h2>
+        <p>This page will be hidden when clicked</p>
+        <p>This page is hidden too</p>
+        <button>check</button>
+        <button id="b1">change this page</button>
+        <button id='b2'>click this page too</button>
+    
+       </body>
+       <script>
+            $(document).ready(function(){
+                $('#b1').click(function(){
+                    $('h2').hide();
+                        $('#b1').hide();
+                });
+                $('body').click(function() {
+                    $('p').first().hide();
+                
+                });
+                });
+
+
+       </script>

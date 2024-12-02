@@ -1,0 +1,23 @@
+
+<head>
+    <script>
+        var limit=Number(prompt("enter the limit"));
+        var arr=[];
+        var arr2=[];
+        var item=0;
+        for(i=0;i<limit;i++){
+            item=Number(prompt("enter elements"));
+            arr.push(item)
+        }
+        document.write(arr,"<br>")
+
+        var add=Number(prompt("enter another number:"));
+        var len=Math.floor(limit/2);
+        arr2=arr;
+        arr2.splice(len,0,add);
+       document.write(arr2);
+    </script>
+</head>
+<body>
+    
+</body>

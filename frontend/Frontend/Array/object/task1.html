@@ -1,0 +1,42 @@
+<html>
+<head>
+   <script>
+      var n=(prompt("enter a number"));
+    let num={
+      1:"one",
+      2:"two",
+      3:"three",
+      4:"four",
+      5:"five",
+      6:"six",
+      7:"seven",
+      8:"eight",
+      9:"nine",
+      0:"zero"
+    };
+    let po={
+      1:"ones",
+      2:"tens",
+      3:"hundred",
+      4:"thousand",
+      5:"ten thousand",
+      6:"lakh",
+      7:"tenlakh",
+      8:"onecrore",
+      9:"tencrore"
+    };
+    var len=n.length;
+    var result=[];
+    for(var i of n) {
+      var result=result+" " +num[i]+" " +po[len]+" "
+      len--;
+
+    }
+    console.log(result);
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

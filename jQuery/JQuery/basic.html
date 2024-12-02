@@ -1,0 +1,23 @@
+
+   <script src="jquery-3.7.1.min.js"></script>
+   <body>
+    <h2>Basic examples of jquery</h2>
+    <p>this page is clicked going hidden</p>
+    <p>this page is too</p>
+    <button>click me</button>
+    <button id='b1'>click this page too</button>
+
+   </body>
+   <script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            $('p').hide();
+    });
+        $('#b1').click(function(){
+            $('h2').hide()
+           
+        });
+    });
+   </script>
+   
+</html>

@@ -1,0 +1,17 @@
+<script>
+    let promise=new Promise(function(resolve,reject){
+        var x="hai";
+        var y="hai";
+        if(x==y){
+            resolve();
+        }else{
+            reject();
+        }
+    });
+    promise.then(function(){
+        console.log('success');
+    });
+    promise.catch(function(){
+        console.log('error has occured!');
+    });
+</script>

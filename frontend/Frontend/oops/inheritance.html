@@ -1,0 +1,35 @@
+<script>
+    class person{
+        constructor(name,place,yob){
+             this.name=name
+             this.place=place
+             this.yob=yob
+        }
+        getname(){
+            console.log("Name is ",this.name)
+        }
+        getplace(){
+            console.log("Place is ",this.place)
+        }
+        getyob(){
+            console.log("Year of birth is ",this.yob)
+        }
+        getage(){
+            // let yr=2024
+            const today=new Date().getFullYear()
+            let age=today-this.yob
+            console.log("Age is ",age)
+        }
+    }
+    const x=new person("Faseela","Thrissur",2004)
+    x.getname()
+    x.getplace()
+    x.getyob()
+    x.getage()
+
+    const y=new person("sreelaya","Edappal",2004)
+    y.getname()
+    y.getplace()
+    y.getyob()
+    y.getage()
+</script>

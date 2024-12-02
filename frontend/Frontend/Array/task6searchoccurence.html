@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+       var  limit=Number(prompt("enter a limit of array: "));
+       var arr=[]
+       for(let i=0;i<limit;i++){
+        var num=Number(prompt("enter a number:"));
+        arr.push(num)
+       }
+       document.write("entered array is",arr,"<br>")
+        var fin=Number(prompt("enter element to search:"));
+        document.write("searched element is:",fin,"<br>");
+        var ans=arr.includes(fin);
+        if(ans==true){
+            document.write("yes,the searched element is in the array <br>")
+         }else{
+            document.write("No, there is no searched element in the array <br>")
+         }
+         var count=0;
+         for(var i of arr){
+            if(i==fin){
+                count+=1;
+            }
+         }
+         document.write("searched element found"+count+"times in the array")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

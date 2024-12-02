@@ -1,0 +1,15 @@
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <body>
+        <h1>This heading will disappear while click on this </h1>
+        <h2>i will also dissapear</h2>
+        <h3>Me too</h3>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("h1,h2,h3").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+

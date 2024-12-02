@@ -1,0 +1,30 @@
+<script>
+    class Animal{
+        constructor(name,age){
+            this.name=name
+            this.age=age
+        }
+        sing(){
+            return`${this.name} can sing`
+        }
+        dance(){
+            return`${this.name} can dance`
+        }
+    }
+    class Cat extends Animal{
+        constructor(name,age,whiskercolor){
+            super(name,age)
+            this.whiskercolor=whiskercolor
+        }
+        whiskercolor1(){
+            return`${this.whiskercolor} whiskercolor`
+            
+        }
+    }
+    let clara=new Cat("clara",33,"indigo")
+    console.log(clara.sing())
+    console.log(clara.whiskercolor1())
+    console.log(clara.dance())
+
+    
+</script>

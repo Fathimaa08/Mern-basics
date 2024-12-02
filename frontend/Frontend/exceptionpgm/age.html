@@ -1,0 +1,36 @@
+<html>
+    <body>
+        
+        <!-- Enter your age:
+        <input type="text" id="agg"><br>
+        <button type="submit" onclick="check()" >click</button>
+        <script>
+            function check(){
+           var age= document.getElementById("agg").value
+           try{
+           if(age<18){
+                   throw new Error("You are not eligible") 
+                }
+                alert("You are eligible")
+            } 
+            catch(err){
+                alert(err.message)
+            }
+        }
+        </script> -->
+
+
+         <script>
+           var age=Number(prompt('Enter your age'));
+           try{
+           if(age<18){
+                   throw new Error("You are not eligible") 
+                }
+                alert("You are eligible")
+            } 
+            catch(err){
+                alert(err.message)
+            }
+      </script> 
+    </body>
+</html>

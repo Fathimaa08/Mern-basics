@@ -1,0 +1,39 @@
+<script>
+    class employee{
+        #id;
+        #salary;
+        age=20;
+
+        constructor(name,id,salary){
+            this.name=name;
+            this.#id=id;
+            this.#salary=salary;
+        }
+        getID(){
+            return this.#id;
+        }
+        getDetails(){
+            return `name:${this.name},id:${this.#id}`;
+        }
+        setSalary(newSalary){
+        
+            if(newSalary>0){
+                this.#salary=newSalary;
+
+            }else{
+                console.error('invalid salary amount')
+            }
+        }
+        getSalary(){
+            return this.#salary;
+        }
+       
+    }
+    var emp=new employee('fathima',1001,50000);
+    console.log(emp.getDetails());
+    console.log(emp.getSalary());
+    emp.setSalary(60000);
+    console.log(emp.setSalary());
+    console.log(emp.getID());
+    console.log(emp.age)
+</script>

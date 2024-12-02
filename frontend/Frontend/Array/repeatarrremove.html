@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        var elem=Number(prompt("enter the length of array:"));
+        var arr=[];
+        for(i=0;i<elem;i++){
+            item=Number(prompt("enter elements"));
+            arr.push(item);
+        }
+        document.write(arr,"<br>")
+
+        var arr2=[];
+        for(j=0;j<elem;j++){
+            if(arr2.includes(arr[j])!=true){
+                arr2.push(arr[j]);
+            }
+        }
+        document.write("array after removing duplicates",arr2);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

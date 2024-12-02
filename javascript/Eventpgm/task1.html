@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printvalue(){
+            // var name=document.form1.name.value;
+            var name=document.getElementsByName("name")[0].value
+            alert("welcome:"+name)
+        }
+    </script>
+    <form name="form1">
+    Enter name: <input type="text" name="name"/>
+    <input type="button" onclick="printvalue()" value="print name"/>
+
+    </form>
+</body>
+</html>

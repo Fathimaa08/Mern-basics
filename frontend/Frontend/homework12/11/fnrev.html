@@ -1,0 +1,22 @@
+<script>
+    var a = prompt("Enter a sentence");
+
+    function revWords(a) {
+        var words = a.split(" ");
+        
+        var rev= "";        
+        for (var i = words.length - 1; i >= 0; i--) {
+            rev+=words[i];
+            
+            if (i > 0) {
+                rev+= " ";
+            }
+        }
+
+        return rev;
+    }
+
+    // Call the function and display the reversed sentence
+    var result = revWords(a);
+    document.write("Reversed sentence: " + result);
+</script>

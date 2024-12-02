@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var button=document.createElement("button");
+    // set the button's text content
+     button.textContent="change backround"
+
+    //  add the button to the body of the document
+    document.body.appendChild(button)
+
+
+    // add the onclick event to change the backround color
+    button.onclick=function(){
+    //     document.body.style.backgroundColor="yellow"
+    // }
+    // button.ondblclick=function(){
+    //     document.body.style.backgroundColor="Aqua"
+    // }
+    if(document.body.style.backgroundColor=="yellow"){
+        document.body.style.backgroundColor="white";
+    }else{
+        document.body.style.backgroundColor="yellow"
+    }}
+
+</script>
+    
+</body>
+</html>
